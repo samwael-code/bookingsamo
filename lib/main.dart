@@ -6,6 +6,7 @@ import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'OCR.dart';
 import 'Screens/BookingScreen/components/login_form.dart';
 import 'Screens/BookingScreen/login_screen.dart';
+import 'Screens/DoctorProfile/Profile.dart';
 import 'Screens/DoctorScreen/components/login_form.dart';
 import 'Screens/DoctorScreen/login_screen.dart';
 import 'Screens/Profile/Update_Profile_Screen.dart';
@@ -78,8 +79,9 @@ class BottomNavBar extends StatelessWidget {
     final controller = PersistentTabController(initialIndex: 0);
 
     List<Widget> _buildScreens() => [
-      HomeScreen(),
-      TScreen(),
+       HomeScreen(),
+
+
       TBScreen(),
       //VisionOCRPage(),
       const UpdateProfileScreen(),
@@ -92,12 +94,7 @@ class BottomNavBar extends StatelessWidget {
         activeColorPrimary: Color(0xff546da8),
         inactiveColorPrimary: Colors.grey,
       ),
-      PersistentBottomNavBarItem(
-        icon: const Icon(Icons.health_and_safety_outlined),
-        title: 'Doctors',
-        activeColorPrimary: Color(0xff546da8),
-        inactiveColorPrimary: Colors.grey,
-      ),
+
       PersistentBottomNavBarItem(
         icon: const Icon(Icons.local_hospital),
         title: 'Bookings',
