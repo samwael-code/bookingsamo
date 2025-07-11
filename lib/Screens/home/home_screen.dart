@@ -156,19 +156,19 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.all(16),
-          child: TextField(
-            controller: _searchController,
-            decoration: InputDecoration(
-              hintText: 'Search Doctor...',
-              prefixIcon: const Icon(Icons.search),
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(10),
-              ),
-            ),
-          ),
-        ),
+        // Padding(
+        //   padding: const EdgeInsets.all(16),
+        //   child: TextField(
+        //     controller: _searchController,
+        //     decoration: InputDecoration(
+        //       hintText: 'Search Doctor...',
+        //       prefixIcon: const Icon(Icons.search),
+        //       border: OutlineInputBorder(
+        //         borderRadius: BorderRadius.circular(10),
+        //       ),
+        //     ),
+        //   ),
+        // ),
       ],
     );
   }
