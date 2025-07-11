@@ -153,7 +153,9 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               Image.asset("assets/icons/logoB.png", height: 180),
               Image.asset("assets/icons/medical_team.png", width: 300, height: 100),
+
             ],
+
           ),
         ),
         // Padding(
@@ -169,6 +171,10 @@ class _HomeScreenState extends State<HomeScreen> {
         //     ),
         //   ),
         // ),
+
+        SizedBox(
+          height: 20,
+        )
       ],
     );
   }
@@ -199,7 +205,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Container(
           padding: const EdgeInsets.symmetric(vertical: 12),
           decoration: BoxDecoration(
-            color: _currentTab == index ? Theme.of(context).primaryColor : Colors.transparent,
+            color: _currentTab == index ? Color(0xff031e40) : Colors.transparent,
             borderRadius: BorderRadius.circular(8),
           ),
           child: Text(
@@ -239,7 +245,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => BotScreen()));
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF104c91),
+                backgroundColor: const Color(0xff031e40),
                 foregroundColor: Colors.white,
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -313,7 +319,7 @@ class DoctorCard extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
             gradient: const LinearGradient(
-              colors: [Color(0xFF104c91), Color(0xff556ab6)],
+              colors: [Color(0xff031e40), Color(0xff274083)],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),

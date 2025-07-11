@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class AppColors {
-  static const Color primaryColor = Color(0xFF0D47A1); // deep blue
+  static const Color primaryColor = Color(0xff031e40); // deep blue
   static const Color whiteColor = Colors.white;
   static const Color yellowColor = Color(0xFFFFD700); // gold
   static const Color bgDarktColor = Color(0xFFF0F0F0); // light grey

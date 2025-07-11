@@ -28,7 +28,7 @@ class TBScreen extends StatelessWidget {
           flexibleSpace: Container(
             decoration: const BoxDecoration(
               gradient: LinearGradient(
-                colors: [Color(0xFF104c91), Color(0xff556ab6)],
+                colors: [Color(0xff031e40), Color(0xff274083)],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
